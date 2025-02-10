@@ -1,4 +1,4 @@
-package co.paystack.flutterpaystack
+package app.cela.hadron
 
 import android.app.Activity
 import io.flutter.embedding.engine.plugins.FlutterPlugin
