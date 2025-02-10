@@ -2,14 +2,14 @@ group 'co.paystack.flutterpaystack'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.7.10'
+    ext.kotlin_version = '1.9.0' // Updated Kotlin version
     repositories {
         mavenCentral()
         google()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.3'
+        classpath 'com.android.tools.build:gradle:8.1.0' // Updated AGP version
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -25,24 +25,26 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace 'app.cela.hadron'
-    compileSdkVersion 34
+    namespace 'app.cela.hadron' // Added namespace
+    compileSdkVersion 34 // Updated compileSdkVersion
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
+
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21 // Updated minSdkVersion (16 is too low for modern libraries)
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         versionCode 21
         versionName "3.0.10"
     }
+
     lintOptions {
         disable 'InvalidPackage'
     }
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1' // Updated AppCompat version
+    implementation 'com.google.android.material:material:1.9.0' // Updated Material version
 }
