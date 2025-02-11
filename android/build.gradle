@@ -1,4 +1,4 @@
-group 'co.paystack.flutterpaystack'
+group 'app.cela.hadron'
 version '1.0-SNAPSHOT'
 
 buildscript {
