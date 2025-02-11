@@ -1,4 +1,4 @@
-package app.cela.hadron
+package android.src.main.kotlin.app.cela.hadron
 
 import android.app.Activity
 import android.content.Intent

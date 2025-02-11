@@ -1,4 +1,4 @@
-package app.cela.hadron
+package android.src.main.kotlin.app.cela.hadron
 
 import android.annotation.SuppressLint
 import android.app.Activity
