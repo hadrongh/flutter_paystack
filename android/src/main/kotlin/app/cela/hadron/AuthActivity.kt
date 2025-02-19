@@ -22,7 +22,7 @@ class AuthActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.co_paystack_android____activity_auth)
+        setContentView(R.layout.app_cela_hadron____activity_auth)
         webView = findViewById(R.id.webView)
         title = "Authorize your card"
         setup()
